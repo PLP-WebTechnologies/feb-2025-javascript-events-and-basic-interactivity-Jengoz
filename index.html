@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Event Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎉 JS Event Assignment 🎉</h1>
+
+  <!-- Button Event -->
+  <button id="magicButton">Click Me!</button>
+
+  <!-- Image Gallery -->
+  <div class="gallery">
+    <img id="galleryImage" src="Images/pexels-photo-206359.jpeg" alt="Gallery" />
+    <br />
+    <button onclick="prevImage()">⏮️ Prev</button>
+    <button onclick="nextImage()">Next ⏭️</button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="tabBtn" data-tab="1">Tab 1</button>
+    <button class="tabBtn" data-tab="2">Tab 2</button>
+    <div class="tabContent" id="tab1">This is content for Tab 1.</div>
+    <div class="tabContent" id="tab2" style="display:none;">This is content for Tab 2.</div>
+  </div>
+
+  <!-- Form -->
+  <form id="myForm">
+    <h3>Register</h3>
+    <label>Name: <input type="text" id="name" required /></label><br />
+    <label>Email: <input type="email" id="email" /></label><br />
+    <label>Password: <input type="password" id="password" /></label><br />
+    <span id="passwordFeedback"></span><br />
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Keypress + Secret Action -->
+  <p id="keyDisplay">Press any key!</p>
+  <div id="secretBox" ondblclick="showSecret()">Double-click me!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
